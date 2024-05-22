@@ -1,0 +1,155 @@
+body {
+    font-family: Elegant Lux Mager, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4ece999;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    color: #c53b00;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 800;
+    color: #090947;
+}
+
+.programa-info {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 20px;
+    color: #5e898c;
+}
+
+
+.precio {
+    font-size: 25px;
+    color: chocolate;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.programa {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.programa img {
+    width: 45%;
+    height: 100%;
+    border-radius: 4px;
+    margin-right: 60px;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    line-height: 25;
+}
+
+.botones button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #198bc8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.botones button:hover {
+    background-color: #45a049;
+}
+
+.video-container {
+    margin-top: 20px;
+    margin-left: 150px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 42.25%; /* Proporción 16:9 para videos responsivos */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+}
+
+@media(max-width: 991px ) {
+    .programa {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .programa img {
+        width: 85%;
+        height: 100%;
+        margin-left: 45px;
+    }
+    .botones {
+        flex-direction: column;
+        
+          
+    }
+
+    .botones button {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 600;
+        font-family: Elegant Lux Mager;
+        background-color: #667d7d;
+        color: #fff;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+
+    }
+    
+    .botones button:hover {
+        background-color: #bea100;
+    }
+    
+    .video-container {
+        margin-top: 20px;
+        margin-left: -10px;
+        margin-right: 0px;
+        justify-content: center;
+        position: relative;
+        width: 10%;
+        padding-bottom: 60.25%; /* Proporción 16:9 para videos responsivos */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        width: 326px;
+        height: 185px;
+        border-radius: 4px;
+    }
+
+}
