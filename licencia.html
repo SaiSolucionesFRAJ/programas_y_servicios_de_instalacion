@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Soluciones a la Ingeniería - Licencias y Servicios Profesionales</title>
+    <meta name="description" content="Licencias permanentes de Autodesk, instalaciones remotas y servicios profesionales para ingeniería civil, topografía y arquitectura.">
+    
+    <!-- Preconexiones para mejorar performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Animaciones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <style>
+    /* Variables CSS */
+    :root {
+        --primary-color: #2c1c77;
+        --secondary-color: #3a2996;
+        --accent-color: #ff4d00;
+        --accent-light: #ff6b34;
+        --hotmart-color: #ff6d2e;
+        --paypal-color: #0b4fcc;
+        --whatsapp-color: #25d366;
+        --text-color: #333333;
+        --light-text: #ffffff;
+        --dark-bg: #1a1340;
+        --menu-bg: #1a1340;
+        --bg-gradient: linear-gradient(to bottom, #0b0742, #1a1340);
+        --card-gradient: linear-gradient(135deg, #1a1340 0%, #2c1c77 100%);
+        --border-color: rgba(255, 255, 255, 0.1);
+        --success-color: #4CAF50;
+        --warning-color: #ff9900;
+        --error-color: #f44336;
+        --info-color: #2196F3;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        --radius-sm: 8px;
+        --radius-md: 15px;
+        --radius-lg: 25px;
+        --transition: all 0.3s ease;
+    }
+
+    /* Reset y estilos base */
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "DM Sans", sans-serif;
+        color: var(--text-color);
+        line-height: 1.6;
+        background-color: #f8f9fa;
+        overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.75rem; }
+    h4 { font-size: 1.5rem; }
+
+    .anton-font {
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    ul, ol {
+        list-style: none;
+    }
+
+    button, input, textarea {
+        font-family: inherit;
+    }
+
+    button {
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .section {
+        padding: 5rem 0;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        color: var(--light-text);
+        margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: normal;
+    }
+
+    .section-icon {
+        font-size: 3rem;
+        color: var(--accent-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: var(--radius-sm);
+        font-weight: 500;
+        transition: var(--transition);
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        color: white;
+    }
+
+    .btn-primary {
+        background-color: var(--accent-color);
+    }
+
+    .btn-primary:hover {
+        background-color: var(--accent-light);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(255, 77, 0, 0.3);
+    }
+
+    .btn-hotmart {
+        background-color: var(--hotmart-color);
+    }
+
+    .btn-hotmart:hover {
+        background-color: #e55c25;
+        transform: translateY(-3px);
+    }
+
+    .btn-paypal {
+        background-color: var(--paypal-color);
+    }
+
+    .btn-paypal:hover {
+        background-color: #00256e;
+        transform: translateY(-3px);
+    }
+
+    .btn-whatsapp {
+        background-color: var(--whatsapp-color);
+    }
+
+    .btn-whatsapp:hover {
+        background-color: #128C7E;
+        transform: translateY(-3px);
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-accent {
+        color: var(--accent-color);
+    }
+
+    .text-light {
+        color: var(--light-text);
+    }
+
+    .bg-dark {
+        background-color: var(--dark-bg);
+    }
+
+    .bg-gradient {
+        background: var(--bg-gradient);
+    }
+
+    /* Animaciones personalizadas */
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+
+    .float-animation {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .pulse-animation {
+        animation: pulse 2s infinite;
+    }
+
+    /* Header y navegación */
+    .top-bar {
+        background: var(--secondary-color);
+        color: var(--light-text);
+        padding: 0.5rem 0;
+        font-size: 0.875rem;
+    }
+
+    .top-bar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .top-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .top-info i {
+        margin-right: 0.5rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    .social-links a {
+        color: var(--light-text);
+        transition: var(--transition);
+    }
+
+    .social-links a:hover {
+        color: var(--accent-color);
+        transform: translateY(-2px);
+    }
+
+    .main-header {
+        background-color: var(--primary-color);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        height: 60px;
+        width: auto;
+        transition: var(--transition);
+    }
+
+    .logo img:hover {
+        transform: scale(1.05);
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-item {
+        position: relative;
+        margin: 0 0.5rem;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        color: var(--light-text);
+        font-size: 1rem;
+        transition: var(--transition);
+    }
+
+    .nav-link:hover {
+        color: var(--accent-color);
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 250px;
+        background: var(--secondary-color);
+        border-radius: var(--radius-sm);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: var(--transition);
+        z-index: 100;
+    }
+
+    
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .dropdown-menu .nav-link {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .dropdown-menu .nav-link:hover {
+        background-color: var(--accent-color);
+        color: floralwhite;
+        padding-left: 1.75rem;
+    }
+
+    .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--light-text);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(to bottom, rgb(22, 14, 66), rgb(0, 52, 111));
+        padding: 4rem 0;
+        color: var(--light-text);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .hero-content {
+        flex: 1;
+        max-width: 600px;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .hero-subtitle {
+        font-size: 1.75rem;
+        color: var(--accent-color);
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-text {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+    }
+
+    .hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-img {
+        max-width: 60%;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    /* Licenses Section */
+    .licenses {
+        background: var(--bg-gradient);
+        padding: 5rem 0;
+    }
+
+    .license-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .license-card {
+        background: var(--card-gradient);
+        border-radius: var(--radius-md);
+        padding: 2rem;
+        position: relative;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border-color);
+        transition: var(--transition);
+    }
+
+    .license-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    }
+
+    .license-highlight {
+        background: linear-gradient(135deg, #2c1c77 0%, #3a2996 100%);
+        border: 1px solid var(--accent-color);
+    }
+
+    .license-badge {
+        position: absolute;
+        top: -0.75rem;
+        right: 1.5rem;
+        background-color: var(--accent-color);
+        color: white;
+        padding: 0.25rem 1rem;
+        border-radius: 1rem;
+        font-weight: bold;
+        font-size: 0.875rem;
+    }
+
+    .license-title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    .license-title i {
+        margin-right: 0.75rem;
+        color: #ff9d13;
+    }
+
+    .license-desc {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .license-features {
+        margin-bottom: 2rem;
+    }
+
+    .feature-item {
+        margin-bottom: 0.75rem;
+        padding-left: 2rem;
+        position: relative;
+        color: white;
+    }
+
+    .feature-item i {
+        position: absolute;
+        left: 0;
+        top: 0.25rem;
+        color: var(--success-color);
+    }
+
+    .license-price {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .price-amount {
+        font-size: 2.25rem;
+        font-weight: bold;
+        color: white;
+        display: block;
+    }
+
+    .price-note {
+        font-size: 0.875rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .license-actions {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .license-actions .btn {
+        flex: 1;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .license-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .video-container {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: var(--radius-md);
+        padding: 1.5rem;
+    }
+
+    .video-title {
+        margin-bottom: 1rem;
+        color: white;
+        font-size: 1.25rem;
+    }
+
+    .video-title i {
+        margin-right: 0.75rem;
+        color: var(--accent-color);
+    }
+
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        overflow: hidden;
+        border-radius: var(--radius-sm);
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .guarantee-card {
+        display: flex;
+        gap: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: var(--radius-md);
+        padding: 1.5rem;
+        align-items: center;
+    }
+
+    .guarantee-icon {
+        font-size: 2.5rem;
+        color: #ff9d13;
+    }
+
+    .guarantee-content h4 {
+        color: white;
+        margin-bottom: 0.5rem;
+    }
+
+    .guarantee-content p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.875rem;
+    }
+
+    /* Servicios Remotos Section */
+    .remote-services {
+        background: var(--bg-gradient);
+        padding: 5rem 0;
+        color: white;
+    }
+
+    .service-intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .intro-text {
+        line-height: 1.6;
+    }
+
+    .service-highlight {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: var(--success-color);
+        font-weight: bold;
+    }
+
+    .service-image img {
+        width: 100%;
+        border-radius: var(--radius-md);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .warning-card {
+        background: rgba(255, 153, 0, 0.1);
+        border-left: 4px solid var(--warning-color);
+        padding: 1.5rem;
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        margin-bottom: 2rem;
+    }
+
+    .warning-title {
+        color: var(--warning-color);
+        font-size: 1.375rem;
+        margin-bottom: 1rem;
+    }
+
+    .warning-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .warning-item {
+        padding-left: 2rem;
+        position: relative;
+    }
+
+    .warning-item i {
+        position: absolute;
+        left: 0;
+        color: var(--warning-color);
+    }
+
+    .recommendation-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 1rem;
+        border-radius: var(--radius-sm);
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .recommendation-icon {
+        font-size: 1.5rem;
+        color: var(--warning-color);
+    }
+
+    .service-explanation {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 2rem;
+        border-radius: var(--radius-md);
+        margin-bottom: 2rem;
+    }
+
+    .explanation-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: white;
+    }
+
+    .explanation-title i {
+        margin-right: 0.75rem;
+        color: var(--accent-color);
+    }
+
+    .process-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .process-step {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .step-number {
+        background-color: var(--accent-color);
+        color: white;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-weight: bold;
+    }
+
+    .solution-card {
+        background: rgba(0, 128, 0, 0.1);
+        border-left: 4px solid var(--success-color);
+        padding: 1rem;
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    .solution-title {
+        color: var(--success-color);
+        margin-bottom: 0.75rem;
+    }
+
+    .service-cases {
+        margin-top: 2rem;
+    }
+
+    .cases-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: white;
+    }
+
+    .cases-title i {
+        margin-right: 0.75rem;
+        color: var(--accent-color);
+    }
+
+    .cases-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    .case-item {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 1.5rem;
+        border-radius: var(--radius-sm);
+        text-align: center;
+        transition: var(--transition);
+    }
+
+    .case-item:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .case-icon {
+        font-size: 2rem;
+        color: var(--accent-color);
+        margin-bottom: 1rem;
+    }
+
+    .case-title {
+        color: white;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .case-desc {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.875rem;
+    }
+
+    .service-cta {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        border-radius: var(--radius-md);
+        padding: 2.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .cta-content {
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .cta-title {
+        font-size: 1.75rem;
+        color: white;
+    }
+
+    .cta-price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .cta-price-amount {
+        font-size: 2.25rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .cta-guarantee {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        font-size: 0.875rem;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 5rem 0;
+        background-color: var(--primary-color);
+        color: var(--light-text);
+    }
+
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-content h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .about-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image img {
+        width: 55%;
+        height: auto;
+    }
+
+    /* Services Section */
+    .services-section {
+        padding: 5rem 0;
+        background: linear-gradient(to top, rgb(7, 1, 47), rgb(0, 85, 182));
+        color: white;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .service-column h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        color: var(--accent-color);
+        border-bottom: 2px solid var(--accent-color);
+    }
+
+    .service-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .service-list a:hover {
+        color: var(--accent-color);
+        padding-left: 0.5rem;
+    }
+
+    /* Footer */
+    .main-footer {
+        background-color: #0f0230;
+        color: white;
+        padding: 2.5rem 0 1rem;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-column h3 {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #1f005e;
+    }
+
+    .footer-contact span {
+        display: block;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-contact i {
+        margin-right: 0.75rem;
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--accent-color);
+        font-size: 0.875rem;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 3.75rem;
+        height: 3.75rem;
+        background-color: var(--whatsapp-color);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        transition: var(--transition);
+    }
+
+    /* Estilos para el modal de términos */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 2000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+    }
+
+    .modal-content {
+        background-color: #1a1340;
+        margin: 5% auto;
+        padding: 2rem;
+        border: 1px solid var(--accent-color);
+        border-radius: var(--radius-md);
+        width: 90%;
+        max-width: 800px;
+        max-height: 80vh;
+        overflow-y: auto;
+        color: white;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+
+    .close-modal {
+        position: absolute;
+        right: 1.5rem;
+        top: 1rem;
+        color: #aaa;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: var(--transition);
+    }
+
+    .close-modal:hover {
+        color: var(--accent-color);
+        transform: rotate(90deg);
+    }
+
+    .terms-content {
+        margin: 1.5rem 0;
+        line-height: 1.6;
+    }
+
+    .terms-content h4 {
+        color: var(--accent-color);
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .terms-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .terms-section h5 {
+        color: #ff9d13;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .terms-section ul {
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .terms-section li {
+        margin-bottom: 0.5rem;
+    }
+
+    .modal-actions {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+    }
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        transform: translateY(-3px);
+    }
+
+    .whatsapp-btn:hover {
+        transform: scale(1.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+        .hero-title {
+            font-size: 3rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .license-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .cases-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .about-container {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        
+        .about-image img {
+            width: 40%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .top-bar {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+        }
+
+        .nav-menu {
+            position: fixed;
+            top: 80px;
+            left: -100%;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background-color: var(--menu-bg);
+            flex-direction: column;
+            transition: 0.3s ease-in-out;
+            overflow-y: auto;
+            padding: 1rem 0;
+        }
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-item {
+            width: 100%;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-link {
+            padding: 1rem;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .dropdown-menu {
+            position: static;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .dropdown.active .dropdown-menu {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+
+        .dropdown-menu .nav-link {
+            padding: 0.75rem 2.5rem;
+            opacity: 0.9;
+        }
+
+        .dropdown-menu .nav-link:hover {
+            background-color: var(--accent-color);
+            padding-left: 2.75rem;
+        }
+
+        .hero-container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 100%;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+        }
+
+        .hero-img {
+            max-width: 80%;
+        }
+
+        .service-intro {
+            grid-template-columns: 1fr;
+        }
+        
+        .license-actions, .cta-buttons {
+            flex-direction: column;
+        }
+        
+        .cases-grid {
+            grid-template-columns: 1fr;
+        }
+        .modal-content {
+        width: 95%;
+        margin: 2% auto;
+        padding: 1.5rem;
+        }
+        
+        .modal-actions {
+            flex-direction: column;
+        }
+        
+        .modal-actions .btn {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-title {
+            font-size: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.75rem;
+        }
+        
+        .section {
+            padding: 3rem 0;
+        }
+        
+        .about-image img {
+            width: 60%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-info">
+                <span><i class="fas fa-phone"></i> 73324084</span>
+                <span><i class="fas fa-envelope"></i> 73324084saico@gmail.com</span>
+            </div>
+            <div class="top-info">
+                <span><i class="fas fa-book"></i> TUTORIALES</span>
+                <span><i class="fas fa-edit"></i> CONTACTO</span>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="img/LOGO2.png" alt="Sai Soluciones Logo" height="80"></a>
+            </div>
+            <button class="hamburger" aria-label="Menú" aria-expanded="false">☰</button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#servicios" class="nav-link">Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo de programas</a></li>
+                        <li class="nav-item"><a href="licencia.html#licencias" class="nav-link">Activación de licencias</a></li>
+                        <li class="nav-item"><a href="update.html" class="nav-link">Materiales de Topografia</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#cursos" class="nav-link">Plantillas Civil 3D<i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a href="plant1.html" class="nav-link">Diseño Geométrico</a></li>
+                        <li class="nav-item"><a href="plant2.html" class="nav-link">Obras hidráulicas</a></li>
+                        <li class="nav-item"><a href="plant3.html" class="nav-link">Lotizaciones</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Explanaciones</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content animate__animated animate__fadeIn">
+                <h1 class="hero-title anton-font">SERVICIO TECNICO REMOTO<span class="hero-subtitle anton-font">A su comodidad y sin salir de casa</span></h1>
+                <p class="hero-text">
+                    La instalación se realizará utilizando una herramienta de Windows.
+                    En la barra de tareas de tu escritorio, encontrarás un buscador.
+                    Escribe 'Asistencia Rápida', abre la aplicación y luego ingresa el código que te proporcionará Sai Soluciones.
+                </p>
+                <a href="#instalaciones-remotas" class="btn btn-primary">MAS DETALLES</a>
+            </div>
+            <div class="hero-image">
+                <img src="img2/asist.png" alt="Licencias Autodesk" class="hero-img float-animation">
+            </div>
+        </div>
+    </section>
+
+    <!-- Licenses Section -->
+    <section id="licencias" class="licenses section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <h2 class="section-title">Comprar Licencias Permanentes Autodesk</h2>
+                <p class="section-subtitle">Activaciones garantizadas para versiones 2020-2025</p>
+            </div>
+            
+            <div class="license-grid">
+                <div class="license-card license-highlight animate__animated animate__fadeInLeft">
+                    <div class="license-badge">Compras seguras</div>
+                    <h3 class="license-title"><i class="fas fa-unlock-alt"></i> Activación Definitiva</h3>
+                    <p class="license-desc">Licencia modificada para activación permanente con una sola instalación</p>
+                    
+                    <ul class="license-features">
+                        <li class="feature-item"><i class="fas fa-check-circle"></i> Compatible con toda la suite Autodesk 2020 - 2025</li>
+                        <li class="feature-item"><i class="fas fa-check-circle"></i> Sin renovaciones ni pagos recurrentes</li>
+                        <li class="feature-item"><i class="fas fa-check-circle"></i> Funcionamiento offline permanente</li>
+                        <li class="feature-item"><i class="fas fa-check-circle"></i> Video Tutorial incluido</li>
+                        <li class="feature-item"><i class="fas fa-check-circle"></i> A una sola instalación y quedan activados todos los programas de AutoDesk</li>
+                    </ul>
+                    
+                    <div class="license-price">
+                        <span class="price-amount">$4.00 USD</span>
+                        <span class="price-note">En Hotmart te muestra el precio en tu moneda nacional</span>
+                    </div>
+                    
+                    <div class="license-actions">
+                        <button class="btn btn-hotmart" onclick="comprarHotmart4USD()">
+                            <i class="fas fa-shopping-cart"></i> Comprar en Hotmart
+                        </button>
+                        <button class="btn btn-paypal" onclick="comprarPayPal()">
+                            <i class="fab fa-paypal"></i> Comprar con PayPal
+                        </button>
+                        <button class="btn btn-whatsapp" onclick="smswhasapp()">
+                            <i class="fab fa-whatsapp"></i> Más información
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="license-content animate__animated animate__fadeInRight">
+                    <div class="video-container">
+                        <h4 class="video-title"><i class="fas fa-play-circle"></i> Video Tutorial de Activación</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://drive.google.com/file/d/1sGfs6WkoGED3x9UF7onE0eOoi1Ns0qS-/preview" 
+                                    allowfullscreen loading="lazy" 
+                                    title="Tutorial de activación de licencias Autodesk"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="guarantee-card">
+                        <div class="guarantee-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="guarantee-content">
+                            <h4>Garantía de Satisfacción</h4>
+                            <p>
+                                Si la licencia no funciona correctamente, haremos todo lo posible para solucionarlo o te devolvemos tu dinero.
+                                <a href="#" onclick="document.getElementById('termsModal').style.display='block'; return false;"><strong>Ver términos</strong></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Remote Services Section -->
+    <section id="instalaciones-remotas" class="remote-services section">
+        <div class="container">
+
+            <div class="service-cta animate__animated animate__fadeIn">
+                <div class="cta-content">
+                    <h3 class="cta-title">¿Necesitas soporte técnico para la activación?</h3>
+                    <p>
+                    Contáctanos para recibir asesoría personalizada y asegurar el funcionamiento óptimo de tu software profesional. Nuestro servicio incluye la configuración de archivos de licencia y soporte remoto especializado.
+                    <br><br>
+                    Una vez realizada la compra, nuestro equipo se pondrá en contacto de inmediato a través del correo que nos proporciones.
+                    </p>
+                    
+                    <div class="cta-price">
+                        <span class="cta-price-amount">$8.00 USD</span>
+                        <span class="cta-guarantee"><i class="fas fa-award"></i> Garantía de 7 días</span>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" onclick="comprarHotmart8USD()">
+                            <i class="fas fa-laptop-medical"></i> Comprar Servicio
+                        </button>
+                        <button class="btn btn-whatsapp" onclick="smswhasapp()">
+                            <i class="fab fa-whatsapp"></i> Mas Información
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-laptop-house"></i>
+                </div>
+                <h2 class="section-title">Instalaciones Remotas Profesionales</h2>
+                <p class="section-subtitle">Software de Ingeniería, Topografía y Arquitectura</p>
+            </div>
+            
+            <div class="service-intro animate__animated animate__fadeIn">
+                <div class="intro-content">
+                    <p class="intro-text">Somos especialistas en instalaciones remotas de software técnico, incluyendo todos los programas de Autodesk. Sabemos que muchos usuarios enfrentan dificultades al instalar o activar estos programas, por lo que ofrecemos un servicio eficiente, confiable y garantizado.</p>
+                    
+                    <div class="service-highlight">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Licencias 100% funcionales y garantizadas</span>
+                    </div>
+                    
+                    <p class="intro-text">Nuestras activaciones están optimizadas para equipos nuevos o con sistemas operativos recién reinstalados, asegurando el correcto funcionamiento de las licencias.</p>
+                </div>
+                
+                <div class="service-image">
+                    <img src="img2/SOP.png" alt="Técnico realizando instalación remota" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="warning-card animate__animated animate__fadeInUp">
+                <div class="warning-title">
+                    <i class="fas fa-exclamation-triangle"></i> Consideraciones importantes
+                </div>
+                <p>En algunos casos, cuando realizamos instalaciones en equipos que previamente ya han tenido licencias ejecutables (especialmente aquellas gestionadas a través de terminales de Windows), puede presentarse un comportamiento irregular:</p>
+                
+                <ul class="warning-list">
+                    <li class="warning-item"><i class="fas fa-times"></i> Errores de licencia al abrir programas de Autodesk</li>
+                    <li class="warning-item"><i class="fas fa-times"></i> Programas que abren sin advertencias pero con licencias no activadas</li>
+                    <li class="warning-item"><i class="fas fa-times"></i> Bloqueos después de actualizaciones</li>
+                </ul>
+                
+                <div class="recommendation-card">
+                    <i class="fas fa-lightbulb recommendation-icon"></i>
+                    <p><strong>Recomendación:</strong> Realizar instalaciones en equipos limpios o con instalaciones recientes del sistema operativo para asegurar el mejor desempeño y garantía del servicio.</p>
+                </div>
+            </div>
+            
+            <div class="service-explanation animate__animated animate__fadeIn">
+                <h3 class="explanation-title"><i class="fas fa-question-circle"></i> ¿Por qué ocurren estos problemas?</h3>
+                <div class="explanation-content">
+                    <p>Cuando se instala una licencia, la aplicación crea archivos en distintas carpetas para administrar las licencias. Si la licencia se altera con actualizaciones de Autodesk, puede quedar defectuosa y es necesario realizar una desinstalación limpia.</p>
+                    
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Desinstalación incompleta</h4>
+                                <p>Quedan archivos residuales porque el desinstalador no tuvo suficientes privilegios o encontró errores.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Archivos corruptos</h4>
+                                <p>Estos archivos residuales permanecen activos e intentan invalidar las nuevas licencias.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Conflictos</h4>
+                                <p>Los archivos corruptos generan conflictos con las nuevas instalaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-card">
+                        <h4 class="solution-title"><i class="fas fa-check-circle"></i> Nuestra solución profesional:</h4>
+                        <p>Identificamos y eliminamos manualmente todos los archivos residuales y claves de registro corruptas, realizando una limpieza profunda antes de la nueva instalación.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-cases animate__animated animate__fadeInUp">
+                <h3 class="cases-title"><i class="fas fa-tools"></i> Otros problemas comunes que resolvemos</h3>
+                <div class="cases-grid">
+                    <div class="case-item">
+                        <div class="case-icon">
+                            <i class="fas fa-power-off"></i>
+                        </div>
+                        <h4 class="case-title">Instalador no inicia</h4>
+                        <p class="case-desc">Servicios de Autodesk detenidos o bloqueados</p>
+                    </div>
+                    <div class="case-item">
+                        <div class="case-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4 class="case-title">Reinicios infinitos</h4>
+                        <p class="case-desc">Durante el proceso de instalación</p>
+                    </div>
+                    <div class="case-item">
+                        <div class="case-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4 class="case-title">Bloqueos de registro</h4>
+                        <p class="case-desc">En entradas específicas de Windows</p>
+                    </div>
+                    <div class="case-item">
+                        <div class="case-icon">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <h4 class="case-title">Cancelaciones inesperadas</h4>
+                        <p class="case-desc">Errores sin explicación durante la instalación</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section">
+        <div class="container about-container">
+            <div class="about-content animate__animated animate__fadeInLeft">
+                <h2 class="anton-font">Sai Soluciones</h2>
+                <h3>Software y Servicios Profesionales</h3>
+                <p>
+                    Con más de 8 años de experiencia, en <strong>S.A.I. Soluciones</strong> nos especializamos en resolver problemas de instalación de programas de Autodesk e ingeniería. No importa desde dónde nos contactes: ya sea en tu casa, oficina o incluso en tu tiempo de descanso, estamos disponibles para ayudarte de forma remota, sin que tengas que buscar a un técnico o perder tiempo valioso. 
+                    <br><br>
+                    Nuestro equipo trabaja las 24 horas, los 7 días de la semana, para brindarte una solución rápida y eficiente. Si no sabes cómo instalar algún programa de ingeniería, nuestros profesionales están listos para hacerlo por ti.
+                  </p>
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-envelope"></i> 73324084saico@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +59173324084</p>
+                <a href="https://wa.link/kkoe4h" class="btn btn-primary">Hablamos?</a>
+            </div>
+            <div class="about-image animate__animated animate__fadeInRight">
+                <img src="img/LOGO2.png" alt="Logo Sai Soluciones" style="max-width: 80%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services-section section">
+        <div class="container">
+            <h2 class="section-title">Servicios Profesionales</h2>
+            <div class="services-grid">
+                <div class="service-column animate__animated animate__fadeInLeft">
+                    <h3>Diseño y Supervisión</h3>
+                    <ul class="service-list">
+                        <li><a href="#">Diseño Geométrico de Carreteras</a></li>
+                        <li><a href="#">Supervisión de Obras (Canales, Carreteras, Muros)</a></li>
+                        <li><a href="#">Cálculo de Presupuestos y Volúmenes</a></li>
+                        <li><a href="#">Estudios Hidrológicos</a></li>
+                    </ul>
+                </div>
+                <div class="service-column animate__animated animate__fadeIn">
+                    <h3>Topografía y Fotogrametría</h3>
+                    <ul class="service-list">
+                        <li><a href="#">Levantamientos Topográficos con Drones</a></li>
+                        <li><a href="#">Procesamiento Fotogramétrico (Curvas de Nivel)</a></li>
+                        <li><a href="#">Replanteo Topográfico</a></li>
+                    </ul>
+                </div>
+                <div class="service-column animate__animated animate__fadeInRight">
+                    <h3>Automatización y Capacitación</h3>
+                    <ul class="service-list">
+                        <li><a href="#">Macros en Visual Basic para Excel</a></li>
+                        <li><a href="#">Cursos de Civil 3D (Carreteras, Canales)</a></li>
+                        <li><a href="#">Plantillas Profesionales para Civil 3D</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Sai Soluciones</h3>
+                    <p>Software y Servicios Profesionales para ingeniería, topografía y arquitectura.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <div class="footer-contact">
+                        <span><i class="fas fa-envelope"></i> 73324084saico@gmail.com</span>
+                        <span><i class="fas fa-phone"></i> +591 73324084</span>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="service-list">
+                        <li><a href="inicio.html">Inicio</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#licencias">Licencias</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright © 2025 | Software y Servicio de Instalación Remota
+                <br><br>
+                <img src="img/LOGO2.png" alt="Logo Sai Soluciones" style="max-width: 25%; height: auto; display: block; margin: 0 auto;">
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/59173324084" class="whatsapp-btn pulse-animation" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Agregar esto justo antes del cierre del body (antes del script) -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3><i class="fas fa-file-contract"></i> Términos de Servicio</h3>
+            <div class="terms-content">
+                <h4>Instalación y Activación de Software Autodesk</h4>
+                
+                <div class="terms-section">
+                    <h5>1. Servicio ofrecido:</h5>
+                    <p>Nos especializamos en la instalación remota y activación de software técnico para ingeniería, arquitectura y topografía, incluyendo toda la gama de productos de Autodesk. Nuestro servicio garantiza la entrega de licencias 100% funcionales en equipos con sistemas operativos nuevos o recientemente reinstalados.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h5>2. Garantía de funcionamiento:</h5>
+                    <p>Garantizamos que todas las licencias proporcionadas son plenamente funcionales y operativas, siempre que se instalen en sistemas que no hayan sido alterados o modificados con configuraciones anteriores de licencias, especialmente aquellas gestionadas mediante terminales de Windows.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h5>3. Política de reembolsos:</h5>
+                    <p>La realización del reembolso se aprueba únicamente cuando:</p>
+                    <ul>
+                        <li>No se pudo lograr activar la licencia en un equipo nuevo o con sistema operativo recién instalado</li>
+                        <li>El reclamo se realiza dentro de los 7 días posteriores a la compra del servicio o producto</li>
+                        <li>Se proporciona evidencia del problema mediante el registro del equipo que realizamos durante la instalación</li>
+                    </ul>
+                    <p>No se aceptarán reembolsos por intentos de instalación en equipos diferentes al registrado inicialmente. Tampoco procederán reembolsos por modificaciones realizadas por el cliente a las licencias proporcionadas.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h5>4. Limitación de responsabilidad:</h5>
+                    <p>No nos hacemos responsables por:</p>
+                    <ul>
+                        <li>Errores de activación o funcionamiento incorrecto en equipos con instalaciones previas de productos Autodesk</li>
+                        <li>Archivos residuales de licencias anteriores (originales, modificadas o vencidas)</li>
+                        <li>Configuraciones del sistema alteradas, claves de registro corruptas, servicios detenidos o bloqueos en el sistema operativo</li>
+                        <li>Modificaciones realizadas por el cliente a las licencias proporcionadas</li>
+                        <li>Problemas derivados de intentar instalar las licencias en equipos no registrados</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section">
+                    <h5>5. Acceso a descargas:</h5>
+                    <p>Los accesos a las descargas de nuestros productos tienen las siguientes condiciones:</p>
+                    <ul>
+                        <li>Vigencia de 30 días desde el momento de la compra</li>
+                        <li>Acceso limitado a un solo correo electrónico registrado</li>
+                        <li>No se permiten transferencias ni compartir credenciales de acceso</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section">
+                    <h5>6. Recomendaciones previas a la instalación:</h5>
+                    <p>Para garantizar el correcto funcionamiento de los productos Autodesk:</p>
+                    <ul>
+                        <li>Se recomienda realizar la instalación en equipos con sistema operativo limpio o recientemente reinstalado</li>
+                        <li>En caso de instalaciones fallidas anteriores, se sugiere desinstalar todos los productos Autodesk, eliminar archivos residuales y limpiar entradas de registro relacionadas</li>
+                        <li>Evitar realizar modificaciones a los archivos de licencia proporcionados</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section">
+                    <h5>7. Sobre problemas recurrentes:</h5>
+                    <p>Algunos de los errores más comunes que pueden surgir en equipos con antecedentes de instalaciones incluyen:</p>
+                    <ul>
+                        <li>Fallos al abrir programas por conflictos de licencia</li>
+                        <li>Instalaciones que no se inician o que se cancelan automáticamente</li>
+                        <li>Mensajes de reinicio continuo durante la instalación</li>
+                        <li>Persistencia de archivos de licencias corruptas que interfieren con nuevas activaciones</li>
+                    </ul>
+                    <p>Nuestro equipo está capacitado para identificar estos problemas y aplicar las soluciones necesarias, incluyendo limpieza profunda del sistema, eliminación de registros, y en casos extremos, la reinstalación del sistema operativo.</p>
+                </div>
+                
+                <div class="terms-section">
+                    <h5>8. Aceptación de términos:</h5>
+                    <p>Al solicitar nuestro servicio, el cliente declara estar informado de las condiciones aquí descritas y acepta que:</p>
+                    <ul>
+                        <li>El correcto funcionamiento del software depende en gran medida del estado del sistema operativo del equipo</li>
+                        <li>Conoce y acepta la política de reembolsos descrita</li>
+                        <li>Reconoce las limitaciones de acceso a las descargas</li>
+                        <li>Acepta que no compartirá ni transferirá las credenciales de acceso</li>
+                        <li>Entiende que cualquier modificación a las licencias anula la garantía</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button id="acceptTerms" class="btn btn-primary">
+                    <i class="fas fa-check-circle"></i> Acepto los términos y condiciones
+                </button>
+                <button id="declineTerms" class="btn btn-secondary">
+                    <i class="fas fa-times-circle"></i> No acepto
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Navigation
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            function isMobile() {
+                return window.innerWidth <= 768;
+            }
+            
+            // Toggle mobile menu
+            if (hamburger) {
+                hamburger.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                    this.setAttribute('aria-expanded', this.classList.contains('active'));
+                });
+            }
+            
+            // Handle dropdowns on mobile
+            dropdowns.forEach(dropdown => {
+                const link = dropdown.querySelector('.nav-link');
+                const menu = dropdown.querySelector('.dropdown-menu');
+                
+                if (link && menu) {
+                    link.addEventListener('click', function(e) {
+                        if (isMobile()) {
+                            e.preventDefault();
+                            dropdown.classList.toggle('active');
+                            
+                            // Close other dropdowns
+                            dropdowns.forEach(other => {
+                                if (other !== dropdown) {
+                                    other.classList.remove('active');
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    
+                    if (isMobile()) {
+                        dropdowns.forEach(dropdown => {
+                            dropdown.classList.remove('active');
+                        });
+                    }
+                }
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (!isMobile()) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove('active');
+                    });
+                }
+            });
+            
+            // Animation on scroll
+            const animateElements = document.querySelectorAll('.animate__animated');
+            
+            function checkAnimation() {
+                animateElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = '1';
+                        element.style.visibility = 'visible';
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', checkAnimation);
+            checkAnimation(); // Run once on load
+            
+            // =================================================================
+            // TÉRMINOS Y CONDICIONES - MODAL (solo para compras)
+            // =================================================================
+            let currentAction = null;
+    
+            // Función para mostrar el modal de términos
+            function showTermsModal(action) {
+                currentAction = action;
+                document.getElementById('termsModal').style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Deshabilitar scroll
+            }
+    
+            // Cerrar modal al hacer clic en la X
+            const closeModalBtn = document.querySelector('.close-modal');
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', function() {
+                    document.getElementById('termsModal').style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    currentAction = null;
+                });
+            }
+    
+            // Cerrar modal al hacer clic fuera del contenido
+            window.addEventListener('click', function(event) {
+                if (event.target === document.getElementById('termsModal')) {
+                    document.getElementById('termsModal').style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    currentAction = null;
+                }
+            });
+    
+            // Botón No Acepto
+            const declineBtn = document.getElementById('declineTerms');
+            if (declineBtn) {
+                declineBtn.addEventListener('click', function() {
+                    document.getElementById('termsModal').style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    currentAction = null;
+                    alert('Compra cancelada.');
+                });
+            }
+            
+    
+            // Botón Acepto
+            const acceptBtn = document.getElementById('acceptTerms');
+            if (acceptBtn) {
+                acceptBtn.addEventListener('click', function() {
+                    document.getElementById('termsModal').style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    
+                    if (currentAction) {
+                        // Ejecutar la acción correspondiente
+                        switch(currentAction.type) {
+                            case 'hotmart4usd':
+                                window.open('https://pay.hotmart.com/R99297532L', '_blank');
+                                break;
+                            case 'hotmart8usd':
+                                window.open('https://pay.hotmart.com/K99147218A', '_blank');
+                                break;
+                            case 'paypal':
+                                window.open('./Checkout/Licencia.html', '_blank');
+                                break;
+                        }
+                    }
+                    
+                    currentAction = null;
+                });
+            }
+    
+            // =================================================================
+            // FUNCIONES DE COMPRA ACTUALIZADAS
+            // =================================================================
+            window.comprarHotmart4USD = function() {
+                showTermsModal({ type: 'hotmart4usd' });
+            };
+    
+            window.comprarHotmart8USD = function() {
+                showTermsModal({ type: 'hotmart8usd' });
+            };
+    
+            window.comprarPayPal = function() {
+                showTermsModal({ type: 'paypal' });
+            };
+    
+            // Nueva función para WhatsApp sin mostrar términos
+            window.smswhasapp = function() {
+                const phone = '59173324084';
+                const message = encodeURIComponent('Hola, estoy interesado en las licencias de Autodesk, ¿podrían brindarme más información?');
+                window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+            };
+        });
+    </script>
+</body>
+</html>
